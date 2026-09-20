@@ -904,28 +904,19 @@ p {
   .section {
     padding: 72px 0;
   }
-
 ​.pulse-button {
   display: inline-block;
   padding: 12px 24px;
-  background-color: var(--primary);
-  border: 1px solid var(--primary);
+  background-color: #25d366;
   color: #ffffff;
   font-weight: bold;
   text-decoration: none;
-  border-radius: 20px;
+  border-radius: 8px;
   animation: pulse 1.8s infinite;
 }
 
 @keyframes pulse {
-  0% {
-    transform: scale(0.98);
-  }
-  50% {
-    transform: scale(1.03);
-    box-shadow: 0 0 0 10px rgba(216, 167, 90, 0);
-  }
-  100% {
-    transform: scale(0.98);
-  }
+  0% { transform: scale(0.98); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(0.98); }
 }
